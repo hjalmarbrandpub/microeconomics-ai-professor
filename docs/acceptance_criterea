@@ -1,0 +1,26 @@
+1. Lesson Generation & Expert Panel
+
+    Given a selected sub-topic from Chapter 5 (e.g., Optimal Choice, Cobb-Douglas, Taxes),
+    When I click "Start Lesson",
+    Then the system outputs a structured lesson formatted with:
+        Direct textbook quotes and citations.
+        Explicit perspectives from The Instructor (formal logic), The Pragmatist (real-world application), and The Skeptic (corner solutions & misconceptions).
+        A "Check for Understanding" quiz question.
+
+2. KGB Verification Audit Gate
+
+    Given a generated lesson,
+    When the backend completes the draft,
+    Then a secondary auditor model ("Sheldon") verifies all quotes and facts against chapter5.md before display, showing a "✅ 100% Grounded" status badge in the UI.
+
+3. Interactive Lesson Q&A
+
+    Given an active lesson topic,
+    When I type a follow-up question in the chat box and click "Ask Question",
+    Then the teaching assistant responds with an answer strictly grounded in Chapter 5 context while preserving chat history.
+
+4. Educational Video Discovery
+
+    Given a selected topic,
+    When I click "Find Related Videos",
+    Then the application dynamically fetches and displays top matching YouTube video search links for that topic directly below the lesson.
